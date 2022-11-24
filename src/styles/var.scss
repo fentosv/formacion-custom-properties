@@ -1,0 +1,51 @@
+@use '../styles/settings/sizes.scss';
+
+:root {
+  --section-width: 90%;
+  --color-dark-1: #222222;
+  --color-dark-1: #222222;
+  --color-light-1: #dedede;
+  --color-light-1: #dedede;
+  --size-spacing-1: 0.8rem;
+  --size-spacing-2: 1rem;
+  --size-spacing-3: 1.5rem;
+  --size-spacing-4: 2rem;
+
+  @media (min-width: sizes.$tablet) {
+    --section-width: 75%;
+    --size-spacing-1: 1rem;
+    --size-spacing-2: 1.5rem;
+    --size-spacing-3: 2rem;
+    --size-spacing-4: 2.25rem;
+  }
+
+  @media (min-width: sizes.$desktop) {
+    --section-width: 80%;
+    --size-spacing-1: 1rem;
+    --size-spacing-2: 1.5rem;
+    --size-spacing-3: 2rem;
+    --size-spacing-4: 2.25rem;
+  }
+}
+
+:root {
+  --color-accent-inverse: #1120a9;
+  --color-accent: #dd2020;
+  --color-brand-inverse: #70cb46;
+  --color-brand-light-inverse: #a0da84;
+  --color-brand: #5d28c8;
+  --color-brand-light: #baa8df;
+  --color-brand-dark: #150338;
+
+  --color-bg: var(--color-brand-light);
+  --color-heading: var(--color-brand-dark);
+  --color-text: var(--color-dark-1);
+  --color-underline: var(--color-brand);
+
+  &.theme-dark {
+    --color-bg: var(--color-brand-dark);
+    --color-heading: var(--color-brand-light-inverse);
+    --color-text: var(--color-light-1);
+    --color-underline: var(--color-brand);
+  }
+}

@@ -1,0 +1,26 @@
+.common {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+
+  color: var(--text, white);
+  background-color: var(--bg, crimson);
+
+  &:hover {
+    color: var(--text-hover, white);
+    background-color: var(--bg-hover, black);
+  }
+}
+.alt1 {
+  --text: black;
+  --bg: lightblue;
+  --bg-hover: royalblue;
+  --text-hover: white;
+}
+.alt2 {
+  --text: yellow;
+  --bg: lightgreen;
+  --bg-hover: orange;
+  --text-hover: white;
+}
