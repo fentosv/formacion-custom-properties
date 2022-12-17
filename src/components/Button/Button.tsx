@@ -3,7 +3,6 @@ import styles from './Button.module.scss'
 import { clsx } from 'clsx'
 
 function Button({ variant }: { variant?: string }) {
-  console.log(variant)
   return (
     <button
       className={clsx(
